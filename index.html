@@ -40,14 +40,15 @@
         <!-- Rute-Strafe -->
         <div id="ruteScreen" class="hidden">
             <div style="font-size: 32px; margin: 20px 0;">RUTE!</div>
-            <div style="font-size: 20px; margin-bottom: 30px;">Nächstes Jahr gibt's nur noch eine Rute als Geschenk!</div>
+            <div style="font-size: 20px; margin-bottom: 30px;">Nächstes Jahr gibt's nur noch eine Rute als Geschenk! Geschenke gibts erst am 24.12</div>
             <button class="btn rute" onclick="reset()">Nochmal versuchen</button>
         </div>
         
         <!-- Gehorsam-Belohnung -->
         <div id="bravoScreen" class="hidden">
             <div style="font-size: 32px; margin: 20px 0;">⭐ Brav gemacht! ⭐</div>
-            <button class="btn bravo" onclick="goToApp()">Trotzdem Geschenk? 😉</button>
+            <button class="btn rute" onclick="reset()">Nochmal versuchen</button>
+            <button class="btn bravo" onclick="goToApp()">Jedoch haben wir bereits den 24.12... Link zum Geschenk? 😉</button>
         </div>
         
         <!-- Erfolg -->
@@ -60,7 +61,7 @@
 
     <script>
         const APP_URL = 'https://belawe.github.io/bens-bowl-generator/';
-        const CHRISTMAS_DATE = new Date('2025-12-23T00:00:00').getTime(); // 24.12.
+        const CHRISTMAS_DATE = new Date('2025-12-24T00:00:00').getTime(); // 24.12.
 
         function isChristmas() {
             return new Date().getTime() >= CHRISTMAS_DATE;
