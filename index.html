@@ -46,7 +46,7 @@
         
         <!-- Gehorsam-Belohnung -->
         <div id="bravoScreen" class="hidden">
-            <div style="font-size: 32px; margin: 20px 0;">⭐ Brav gemacht! Komme morgen wieder! ⭐</div>
+            <div style="font-size: 32px; margin: 20px 0;">⭐ Brav gemacht! ⭐</div>
             <button class="btn bravo" onclick="goToApp()">Jedoch haben wir bereits den 24.12... Link zum Geschenk? 😉</button>
         </div>
         
@@ -95,7 +95,7 @@
 
         function showBravoTruth() {
             const bravoDiv = document.createElement('div');
-            bravoDiv.innerHTML = '<div style="font-size: 32px; margin: 20px 0;">⭐ Brav gemacht! ⭐</div>';
+            bravoDiv.innerHTML = '<div style="font-size: 32px; margin: 20px 0;">⭐ Brav gemacht! Komme morgen wieder! ⭐</div>';
             bravoDiv.classList.add('bravoScreen');
             document.querySelector('.container').appendChild(bravoDiv);
         }
